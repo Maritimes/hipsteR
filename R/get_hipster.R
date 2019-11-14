@@ -8,7 +8,8 @@
 get_hipster<-function(){
 # https://worldwideinterweb.com/funny-hipster-pictures/
 # https://www.pexels.com/search/hipster/
-search <- read_html("https://www.istockphoto.com/ca/photos/beard?sort=mostpopular&mediatype=photography&phrase=beard")
+#search <- read_html("https://www.istockphoto.com/ca/photos/beard?sort=mostpopular&mediatype=photography&phrase=beard")
+search <- read_html("https://www.google.com/search?q=%22hipster%22+%22beard%22&source=lnms&tbm=isch")
 #Grab all <img> tags, get their "src" attribute, a URL to an image
 urls <- search %>% html_nodes("img") %>% html_attr("src")
 #do some filtering to remove garbage
