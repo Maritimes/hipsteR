@@ -6,9 +6,9 @@
 #' @author  Mike McMahon, \email{Mike.McMahon@@dfo-mpo.gc.ca}
 #' @export
 get_hipster<-function(){
-#each query gets 20 results - use the randomizer allow results from any of the first 200 pages of results
-randomStart = 20*round(sample(1:200,1)/20)
-searchURLs <- c("https://www.google.com/search?q=%22hipster%22&tbm=isch&safe=active&start="
+#each query gets 20 results - use the randomizer allow results from any of the first 50 pages of results
+randomStart = 20*round(sample(1:50,1)/20)
+searchURLs <- c("https://www.google.com/search?q=%22hipster%22+beard+OR+mustache&tbm=isch&safe=active&start="
                 #, "https://www.bing.com/images/search?q=%22hipster%22&FORM=HDRSC2&safeSearch=Strict&count=20&offset="
                 )
 this = sample(searchURLs,1)

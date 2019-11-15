@@ -3,9 +3,9 @@ hipsteR
 
 Changes:
 2019.11.15
-* Results now pulled from any of Google's first 200 pages of results (not just page 1) - we
+* Results now pulled from any of Google's first 50 pages of results (not just page 1) - we
 find much more variety of scarves, tweed elbow patches and beards now.
-* Removed "beard" from search term, as some hipsters are gloriously mustachio-ed
+* Added "mustache" as a search term, as some hipsters are gloriously mustachio-ed
 * Hoped to add bing results, but pagination doesn't work, and would result in repeated results
 2019.11.14
 * Roll out of this important project
